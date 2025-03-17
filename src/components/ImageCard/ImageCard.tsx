@@ -1,6 +1,11 @@
+import { Image } from "../../js/unsplash-api";
 import css from "./ImageCard.module.css";
 
-export default function ImageCard({ image }) {
+type Prop = {
+  image: Image;
+};
+
+export default function ImageCard({ image }: Prop) {
   return (
     <div className={css.card}>
       <img
